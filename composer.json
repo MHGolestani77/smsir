@@ -1,0 +1,51 @@
+{
+    "name": "mhgolestani77/smsir",
+    "description": "Official sms.ir New Panel laravel repository",
+    "keywords": [
+        "Mhgolestani77",
+        "Smsir"
+    ],
+    "homepage": "https://github.com/Mhgolestani77/smsir",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Pouya Biglari",
+            "email": "cyberman9000@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "*",
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mhgolestani77\\Smsir\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mhgolestani77\\Smsir\\SmsirServiceProvider"
+            ],
+            "aliases": {
+                "Smsir": "Smsir"
+            }
+        }
+    }
+}
